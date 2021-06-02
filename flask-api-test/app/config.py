@@ -3,13 +3,10 @@ class DevelopmentConfig:
 
 
     username = 'admin'
-    db_pasword = 'rootroot@database-2'
-    endpoint = 'database-2.cnhwwrar03ka.us-east-1.rds.amazonaws.com'
+    db_pasword = '**@*'
+    endpoint = '****.rds.amazonaws.com'
     db_instance = 'lambdaTestDB'
     SQLALCHEMY_DATABASE_URI = 'mysql://{0}:{1}@{2}/{3}'.format(username, db_pasword, endpoint, db_instance)
-    #    SQLALCHEMY_DATABASE_URI = ('mysql://admin:rootroot@database-2'
-    #                               '.cnhwwrar03ka.us-east-1.rds.amazonaws.com'
-    #                               '/lambdaTestDB')
     # TRACK_MODIFICATION機能を無効化
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     # SQLAlchemyからRDSへの同時接続の最大数
